@@ -1,10 +1,13 @@
 import random
 
-filename = input('Please enter the file name: ')
+print("Hello! Welcome to random assignment generator :)\n")
+print("/* Here we expect each line of your input file (.txt) to start with a number and following by a white space */\n")
+
+filename = input('Please tell me the name of your assignment file: ')
 newfilename = filename + "-assigned"
 
 # need configuration here
-names = ['A', 'B', 'C']   # names are the names of team member
+names = ['蔡尚宏', '于萱', '吴伊伊','杨智勇','任天萌','童晨','徐立力','诸浩南','刘昶']   # names are the names of team member
 length = len(names)
 random.shuffle(names)
 
@@ -32,7 +35,8 @@ for line in fd:
 fd.close()
 newfd.close()
 
-print("Congratulation! The random assignment has completed!")
+print("\nCongratulation! The random assignment has completed!")
 print("There are " + str(count) + " tasks in this file.")
+print("Bye-bye~")
 
 

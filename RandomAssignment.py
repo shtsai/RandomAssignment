@@ -4,7 +4,12 @@ print("Hello! Welcome to random assignment generator :)\n")
 print("/* Here we expect each line of your input file (.txt) to start with a number and following by a white space */\n")
 
 filename = input('Please tell me the name of your assignment file: ')
-newfilename = filename + "-assigned"
+
+# get new file name
+dot = 0
+while (filename[dot] != '.'):
+    dot += 1
+newfilename = filename[:dot] + "-assigned" + filename[dot:]
 
 # need configuration here
 names = ['蔡尚宏', '于萱', '吴伊伊','杨智勇','任天萌','童晨','徐立力','诸浩南','刘昶']   # names are the names of team member
@@ -23,7 +28,7 @@ for line in fd:
 
     # find first empty space, assuming all the line starts with a number (or index)
     i = 0
-    while (line[i] != ' '):  # i is the index of the first space
+    while (line[i] != ' ' and line[i] != '	'):  # i is the index of the first space
         i += 1
 
     # assign the task to the member and write into the new file

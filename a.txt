@@ -1,0 +1,11 @@
+350 Intersection of Two Arrays II	42.6%	Easy
+355 Design Twitter	23.6%	Medium
+356 Line Reflection 	28.6%	Medium
+
+358 Rearrange String k Distance Apart 	30.0%	Hard
+359 Logger Rate Limiter 	57.0%	Easy
+
+380 Insert Delete GetRandom O(1)	35.8%	Hard
+
+381 Insert Delete GetRandom O(1) - Duplicates allowed	26.8%	Hard
+389 Find the Difference	49.6%	Easy
